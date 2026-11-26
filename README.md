@@ -273,8 +273,8 @@ npm run dev
 |---|---|---|
 | `PORT` | Server port | `3000` |
 | `BASE_URL` | Public URL used in sharing links | `http://localhost:3000` |
-| `DATA_DIR` | Private data directory | `./data` |
-| `DB_FILE` | SQLite database location | `./data/sharespace.sqlite` |
+| `DATA_DIR` | Private data directory | `/tmp/sharespace` |
+| `DB_FILE` | SQLite database location | `/tmp/sharespace/sharespace.sqlite` |
 | `APP_SECRET` | HMAC secret (32+ characters) | Required |
 | `MAX_FILE_SIZE_MB` | Maximum size per uploaded file | `500` |
 | `MAX_ZIP_SIZE_MB` | Maximum generated ZIP size | `500` |

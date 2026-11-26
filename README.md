@@ -2,7 +2,7 @@
 
 ### Temporary File Sharing Application
 
-Share any file. Preserve original quality. Share securely.
+**Share any file. Preserve original quality. Share securely.**
 
 ShareSpace is a full-stack temporary file-sharing web application that allows users to upload files and share them through a unique link, QR code, or six-digit access code. Files remain available for a limited time and are automatically deleted after expiration.
 
@@ -15,6 +15,13 @@ ShareSpace is a full-stack temporary file-sharing web application that allows us
 ![Status](https://img.shields.io/badge/Status-Development-yellow)
 
 </p>
+
+---
+
+## Live Demo & GitHub Repository
+
+- **Live Application:** [ShareSpace – Open Application](https://sharespace-nmzj.onrender.com)
+- **GitHub Repository:** [View Source Code](https://github.com/YOUR_USERNAME/ShareSpace)
 
 ---
 
@@ -125,7 +132,7 @@ ShareSpace includes several baseline security features:
 - Basic security headers
 - Safe download filenames
 
-> Security Disclaimer: This project is a runnable academic project starter and has not undergone a formal security audit. Additional protections are recommended before public production deployment.
+> **Security Disclaimer:** This project is a runnable academic project starter and has not undergone a formal security audit. Additional protections are recommended before public production deployment.
 
 ---
 

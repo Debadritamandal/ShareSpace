@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb"><title>ShareSpace — Secure file sharing</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="/"> <span class="brand-mark">S</span> ShareSpace</a><span class="nav-note">Private sharing · 15-minute links</span></header>
+<main class="container">
+  <section class="hero"><span class="eyebrow">SIMPLE. SECURE. TEMPORARY.</span><h1>Share files.<br><span>Not your storage.</span></h1><p>Upload once and share using a private link, QR code, or six-digit download code.</p></section>
+  <div class="columns">
+    <section class="panel">
+      <div class="panel-head"><div><h2>Upload files</h2></div><span class="muted">Up to 500 MB each</span></div>
+      <label class="dropzone" id="dropzone" for="files"><span class="upload-icon">↑</span><strong>Drop files here</strong><span>or <u>browse your device</u></span><small>Multiple files are combined into one ZIP archive.</small></label>
+      <input id="files" type="file" multiple hidden>
+      <div id="file-list" class="file-list"></div>
+      <div id="progress-wrap" class="progress-wrap hidden"><div class="progress-label"><span id="progress-text">Uploading…</span><span id="progress-value">0%</span></div><div class="progress"><span id="progress-bar"></span></div></div>
+      <button class="button primary full" id="upload-btn">Upload and create share</button>
+      <p class="tiny">One file stays in its original format. Multiple files are packaged into a ZIP.</p>
+      <div id="upload-error" class="message error hidden"></div>
+    </section>
+    <section class="panel download-panel">
+      <div class="panel-head"><div><h2>Download a file</h2></div></div>
+      <p class="muted">Already have a ShareSpace link or code? Open it here.</p>
+      <label class="field-label" for="link-input">Sharing link</label><div class="input-row"><input id="link-input" placeholder="Paste your sharing link"><button id="open-link" class="button secondary">Open</button></div>
+      <div class="or"><span>OR</span></div>
+      <label class="field-label" for="code-input">Six-digit download code</label><input id="code-input" class="code-input" inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code">
+      <button class="button dark full" id="code-btn">Find my file <span>→</span></button>
+      <div id="download-error" class="message error hidden"></div>
+      <div class="privacy-note"><span>✦</span><p>Shares automatically expire after 15 minutes. Downloading does not extend the timer.</p></div>
+    </section>
+  </div>
+  <footer>ShareSpace <span>·</span> Temporary file sharing, made simple.</footer>
+</main>
+<script src="/app.js"></script>
+</body></html>

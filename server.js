@@ -14,7 +14,11 @@ const rateLimit = require("express-rate-limit");
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
-const BASE_URL = (process.env.BASE_URL || `http://localhost:${PORT}`).replace(/\/$/, "");
+const BASE_URL = (
+  process.env.RENDER_EXTERNAL_URL ||
+  process.env.BASE_URL ||
+  `http://localhost:${PORT}`
+).replace(/\/$/, "");
 const DATA_DIR = path.resolve(process.env.DATA_DIR || "/tmp/sharespace");
 const UPLOAD_DIR = path.join(DATA_DIR, "uploads");
 const TEMP_DIR = path.join(DATA_DIR, "temp");
